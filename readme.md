@@ -18,4 +18,4 @@ In a third terminal window:
 
     (echo "first message"; echo "second message") | ./pipe2moos tx variable
 
-This example will start two MOOS apps named "rx" and "tx", and print both messages in the first window, having passed the strings through a MOOSDB variable called "variable". The pipe2moos process sends one message per line ingested on stdin, and exits cleanly upon reaching eof on stdin. The moos2pipe process prints each update of the variable to stdout, and never exits unless terminated by any of the usual signals.
+This example will start two MOOS apps named "rx" and "tx", and print both messages in the second window, having passed the strings through a MOOSDB variable called "variable". The pipe2moos process sends one message per line ingested on stdin, and exits cleanly upon reaching eof on stdin. The moos2pipe process prints each update of the variable to stdout, and never exits unless terminated by any of the usual signals.
